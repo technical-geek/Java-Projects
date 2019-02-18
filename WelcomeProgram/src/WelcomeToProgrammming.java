@@ -1,6 +1,10 @@
 public class WelcomeToProgrammming {
     public static void main (String[] args){
-        printArray();
+        //printArray();
+        Variables variables = new Variables();
+        variables.printAttributes();
+        Variables.value8 = 3.14;
+
 
     }
     static void printArray (){
