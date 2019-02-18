@@ -17,7 +17,7 @@ public class Operators {
     }
 
     public boolean logicalAndOperator (int a, int b, int c){
-        return  a > b && a < c;
+        return  a > b && a > c;
     }
 
     public  boolean logicalOrOperator (int a, int b, int c){
@@ -25,6 +25,6 @@ public class Operators {
     }
 
     public  boolean logicalNotOperator  (int a, int b, int c){
-        return !(a > b && a < c);
+        return !(a < b && a < c);
     }
 }

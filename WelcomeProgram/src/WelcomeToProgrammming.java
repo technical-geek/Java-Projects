@@ -18,13 +18,13 @@ public class WelcomeToProgrammming {
 
 
         //logical operators
-        System.out.println("x is greater than y? " + operators.greaterThanOperator(x,y));
-        System.out.println("x is less than y? " + operators.lessThanOperator(x,y));
-        System.out.println("x is equal to y? " + operators.equalToOperator(x,y));
-        System.out.println("x is not equal to y? " + operators.notEqualOperator(x,y));
-        System.out.println("x is between y and z? " + operators.logicalAndOperator(x,y,z));
-        System.out.println("x is greater than y or z? " + operators.logicalOrOperator(x,y,z));
-        System.out.println("x is not between y and z? " + operators.logicalNotOperator(x,y,z));
+        System.out.println("x: " + x + " y: " +y+ " || x is greater than y? " + operators.greaterThanOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is less than y? " + operators.lessThanOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is equal to y? " + operators.equalToOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is not equal to y? " + operators.notEqualOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than  y and z? " + operators.logicalAndOperator(x,y,z));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than y or z? " + operators.logicalOrOperator(x,y,z));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is between y and z? " + operators.logicalNotOperator(x,y,z));
 
 
 
