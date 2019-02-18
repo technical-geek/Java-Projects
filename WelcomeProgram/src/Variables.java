@@ -14,8 +14,10 @@ public class Variables {
     //method
     void printAttributes (){
         System.out.println(value1.length());
-        ++value2;
-        System.out.println(value2);
+        System.out.println("before " +value2);
+        int a = value2++ + value6 * 1;
+        System.out.println(a);
+        System.out.println("after "+value2);
         System.out.println(value3);
         System.out.println(value4);
         System.out.println(value5);
