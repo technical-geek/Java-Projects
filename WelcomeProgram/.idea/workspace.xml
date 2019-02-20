@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce62bba1-6395-43d7-8893-0f6586447d93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WelcomeProgram/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WelcomeProgram/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WelcomeProgram/Operators.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WelcomeProgram/Operators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WelcomeProgram/Variables.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WelcomeProgram/Variables.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WelcomeProgram/WelcomeToProgrammming.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WelcomeProgram/WelcomeToProgrammming.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WelcomeToProgrammming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WelcomeToProgrammming.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,84 +22,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WelcomeToProgrammming.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+            <state relative-caret-position="450">
+              <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+              <folding>
+                <element signature="method#calcOperatorFunction#0;class#WelcomeToProgrammming#0" />
+                <element signature="method#printArray#0;class#WelcomeToProgrammming#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Operators.java">
+        <entry file="file://$PROJECT_DIR$/src/Restraunt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="450">
+              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
               <folding>
-                <element signature="e#75#76#0" expanded="true" />
-                <element signature="e#104#105#0" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Variables.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Calculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-              <folding>
-                <element signature="e#139#140#0" expanded="true" />
-                <element signature="e#163#164#0" expanded="true" />
-                <element signature="e#206#207#0" expanded="true" />
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="655" column="15" selection-start-line="655" selection-start-column="15" selection-end-line="655" selection-end-column="15" />
-              <folding>
-                <element signature="e#24503#24504#0" expanded="true" />
-                <element signature="e#24549#24550#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/WelcomeProgram/WelcomeToProgrammming.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#456#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,16 +67,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/Variables.java" />
         <option value="$PROJECT_DIR$/src/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/WelcomeToProgrammming.java" />
         <option value="$PROJECT_DIR$/src/Operators.java" />
+        <option value="$PROJECT_DIR$/src/ErrorHandling.java" />
+        <option value="$PROJECT_DIR$/src/WelcomeToProgrammming.java" />
+        <option value="$PROJECT_DIR$/src/Restraunt.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="140" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="934" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="13" />
+    <option name="y" value="23" />
+    <option name="width" value="1600" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -142,7 +89,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,10 +105,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550527698797" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550635939253" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,10 +152,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="43" width="1400" height="934" extended-state="0" />
+    <frame x="0" y="23" width="1624" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22376738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -216,7 +164,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897863" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32834226" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -236,76 +184,78 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/production/WelcomeProgram/WelcomeToProgrammming.class">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="file://$PROJECT_DIR$/src/Operators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="195">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <element signature="e#0#456#0" expanded="true" />
+            <element signature="e#75#76#0" expanded="true" />
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="655" column="15" selection-start-line="655" selection-start-column="15" selection-end-line="655" selection-end-column="15" />
-          <folding>
-            <element signature="e#24503#24504#0" expanded="true" />
-            <element signature="e#24549#24550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Variables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="195">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Variables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/WelcomeProgram/WelcomeToProgrammming.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-282">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErrorHandling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WelcomeToProgrammming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+        <state relative-caret-position="450">
+          <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+          <folding>
+            <element signature="method#calcOperatorFunction#0;class#WelcomeToProgrammming#0" />
+            <element signature="method#printArray#0;class#WelcomeToProgrammming#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operators.java">
+    <entry file="file://$PROJECT_DIR$/src/Restraunt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="450">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
           <folding>
-            <element signature="e#75#76#0" expanded="true" />
-            <element signature="e#104#105#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
           </folding>
         </state>
       </provider>
