@@ -4,7 +4,67 @@ public class WelcomeToProgrammming {
 
 
     public static void main (String[] args){
+        Customer customer = new Customer();
+        Restraunt restaurant = new Restraunt();
+        restaurant.restaurantMenu();
+        String customerOrder = customer.customerOrder();
 
+        if (restaurant.checkingAvailability(customerOrder)){
+            int numberOfOrders = customer.numberOfOrders();
+            int spiceLevel = customer.spiceLevel();
+            int timeTaken = restaurant.timeTakenToPreapare(customerOrder,numberOfOrders);
+            if (timeTaken !=0){
+                System.out.println("Would you like to confirm your order? \n Please type YES or NO");
+                try {
+                    Scanner scanner = new Scanner(System.in);
+                    String customerResponse  = scanner.nextLine();
+                    if (customerResponse.equals("YES")){
+                        restaurant.orderSentToKitchen(customerOrder);
+                    }
+                    else {
+                        System.out.println("Sorry we couldn't server you today. ");
+                    }
+
+                }
+                catch (Exception ex){
+                    System.out.println(ex);
+                    System.out.println("Please enter a string value.");
+                }
+
+            }
+        }
+
+
+    }
+
+
+    static void calcOperatorFunction(){
+        int x = 8, y=5, z=10;
+        Calculator calculator = new Calculator();
+        Operators operators = new Operators();
+
+        //Calculator
+        System.out.println ("addition is " + calculator.add(x,y));
+        System.out.println ("subtraction is " + calculator.sub(x,y));
+        System.out.println ("multiplication is " + calculator.mul (x,y));
+        System.out.println ("division is " + calculator.div(x,y));
+        System.out.println ("modulus division is " + calculator.mod(x,y));
+
+        System.out.println("\n=========================================================\n");
+
+
+        //logical operators
+        System.out.println("x: " + x + " y: " +y+ " || x is greater than y? " + operators.greaterThanOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is less than y? " + operators.lessThanOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is equal to y? " + operators.equalToOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is not equal to y? " + operators.notEqualOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than  y and z? " + operators.logicalAndOperator(x,y,z));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than y or z? " + operators.logicalOrOperator(x,y,z));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is between y and z? " + operators.logicalNotOperator(x,y,z));
+
+
+
+        //Variables.value8 = 3.14;
 
 
         // -> NullPointerException
@@ -38,37 +98,6 @@ public class WelcomeToProgrammming {
 //        String userName = myObj.nextLine();
 //        System.out.println("Got the input");
 //        System.out.println(userName);
-
-
-    }
-
-    static void calcOperatorFunction(){
-        int x = 8, y=5, z=10;
-        Calculator calculator = new Calculator();
-        Operators operators = new Operators();
-
-        //Calculator
-        System.out.println ("addition is " + calculator.add(x,y));
-        System.out.println ("subtraction is " + calculator.sub(x,y));
-        System.out.println ("multiplication is " + calculator.mul (x,y));
-        System.out.println ("division is " + calculator.div(x,y));
-        System.out.println ("modulus division is " + calculator.mod(x,y));
-
-        System.out.println("\n=========================================================\n");
-
-
-        //logical operators
-        System.out.println("x: " + x + " y: " +y+ " || x is greater than y? " + operators.greaterThanOperator(x,y));
-        System.out.println("x: " + x + " y: " +y+ " || x is less than y? " + operators.lessThanOperator(x,y));
-        System.out.println("x: " + x + " y: " +y+ " || x is equal to y? " + operators.equalToOperator(x,y));
-        System.out.println("x: " + x + " y: " +y+ " || x is not equal to y? " + operators.notEqualOperator(x,y));
-        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than  y and z? " + operators.logicalAndOperator(x,y,z));
-        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than y or z? " + operators.logicalOrOperator(x,y,z));
-        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is between y and z? " + operators.logicalNotOperator(x,y,z));
-
-
-
-        //Variables.value8 = 3.14;
     }
     static void printArray (){
         int num [] = {2,3,4,5,6,7,8,1,6};
