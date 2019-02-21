@@ -19,7 +19,7 @@ public class WelcomeToProgrammming {
                     Scanner scanner = new Scanner(System.in);
                     String customerResponse  = scanner.nextLine();
                     if (customerResponse.equals("YES")){
-                        restaurant.orderSentToKitchen(customerOrder);
+                        restaurant.orderSentToKitchen(customerOrder);       // Comment -> try to name orderSentToKitchen to sendOrderToKitchen "just making it more sensible to use".
                     }
                     else {
                         System.out.println("Sorry we couldn't server you today. ");
