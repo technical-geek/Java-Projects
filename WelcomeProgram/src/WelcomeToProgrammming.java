@@ -1,9 +1,64 @@
+import CustomerOrders.CustomerOrderDetails;
+import CustomerProfile.CustomerInfo;
+import VerifyCustomerInfo.VerifyCustomerInfo;
+
 import java.util.Scanner;
 
 public class WelcomeToProgrammming {
 
 
     public static void main (String[] args){
+
+        CustomerInfo customerInfo = new CustomerInfo();
+
+        //set and get user input user name and password
+        CustomerInfo customerDetails =  customerInfo.userInputDetails();
+        VerifyCustomerInfo verifyCustomerInfo = new VerifyCustomerInfo();
+
+        //verify is user name exists and matches with password in records
+        VerifyCustomerInfo verifyCustomerDataExists = verifyCustomerInfo.
+                verifyUserInfo(customerInfo.userInputName, customerInfo.userInputPassword);
+
+        // if user name and password matched, then get status of that user
+        if ((verifyCustomerDataExists.isUserExists) && (verifyCustomerDataExists.isMatchingUserNameAndPassword)){
+            CustomerOrderDetails customerOrderDetails = new CustomerOrderDetails();
+            customerOrderDetails.orderStatus(customerInfo.userInputName);
+
+        }
+
+
+
+
+
+    }
+
+
+    static void calcOperatorFunction(){
+        int x = 8, y=5, z=10;
+        Calculator calculator = new Calculator();
+        Operators operators = new Operators();
+
+        //Calculator program
+        System.out.println ("addition is " + calculator.add(x,y));
+        System.out.println ("subtraction is " + calculator.sub(x,y));
+        System.out.println ("multiplication is " + calculator.mul (x,y));
+        System.out.println ("division is " + calculator.div(x,y));
+        System.out.println ("modulus division is " + calculator.mod(x,y));
+
+        System.out.println("\n=========================================================\n");
+
+
+        //logical operators
+        System.out.println("x: " + x + " y: " +y+ " || x is greater than y? " + operators.greaterThanOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is less than y? " + operators.lessThanOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is equal to y? " + operators.equalToOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " || x is not equal to y? " + operators.notEqualOperator(x,y));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than  y and z? " + operators.logicalAndOperator(x,y,z));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than y or z? " + operators.logicalOrOperator(x,y,z));
+        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is between y and z? " + operators.logicalNotOperator(x,y,z));
+
+
+        // customer and restaurant program
         Customer customer = new Customer();
         Restraunt restaurant = new Restraunt();
         restaurant.restaurantMenu();
@@ -33,34 +88,6 @@ public class WelcomeToProgrammming {
 
             }
         }
-
-
-    }
-
-
-    static void calcOperatorFunction(){
-        int x = 8, y=5, z=10;
-        Calculator calculator = new Calculator();
-        Operators operators = new Operators();
-
-        //Calculator
-        System.out.println ("addition is " + calculator.add(x,y));
-        System.out.println ("subtraction is " + calculator.sub(x,y));
-        System.out.println ("multiplication is " + calculator.mul (x,y));
-        System.out.println ("division is " + calculator.div(x,y));
-        System.out.println ("modulus division is " + calculator.mod(x,y));
-
-        System.out.println("\n=========================================================\n");
-
-
-        //logical operators
-        System.out.println("x: " + x + " y: " +y+ " || x is greater than y? " + operators.greaterThanOperator(x,y));
-        System.out.println("x: " + x + " y: " +y+ " || x is less than y? " + operators.lessThanOperator(x,y));
-        System.out.println("x: " + x + " y: " +y+ " || x is equal to y? " + operators.equalToOperator(x,y));
-        System.out.println("x: " + x + " y: " +y+ " || x is not equal to y? " + operators.notEqualOperator(x,y));
-        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than  y and z? " + operators.logicalAndOperator(x,y,z));
-        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is greater than y or z? " + operators.logicalOrOperator(x,y,z));
-        System.out.println("x: " + x + " y: " +y+ " z: " +z+ " || x is between y and z? " + operators.logicalNotOperator(x,y,z));
 
 
 
