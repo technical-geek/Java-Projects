@@ -1,40 +1,62 @@
 package CustomerOrders;
+import Order.Order;
+import VerifyCustomerInfo.VerifyCustomerInfo;
+import VerifyCustomerInfo.VerificationStatus;
+
+import java.util.Scanner;
 
 public class CustomerOrderDetails {
-    /*private String orderStatus1 = "Your order of mobile phone is out for delivery";
-    private String orderStatus2 = "Your order of mobile phone screen protector is delivered";
-    private String orderStatus3 = "Your order of Shoes is in transit";
-    private String orderStatus4 = "Your order of Headphones is ready for shipping";
-    */
-
-    private String [] orderStatus =  {"out for delivery", "delivered", "in transit", "order received"};
-    private String [] orderedItem = {"Mobile Phone", "Laptop", "Electric Lamp", "Screen Protector", "Books", "Gaming Console"};
-    private String firstUserName = "Max";
-    private String secondUserName = "Tim";
-    private int userOrderLimit, orderStatusLimit, orderItemLimit;
 
 
-    public void orderStatus (String customerUserName){
-        System.out.println("See your order status below");
-        System.out.println("===========================================================");
+    Order order1 = new Order("Max","SFO","Mobile Phone","delivered");
+    Order order2 = new Order("Tim","San Jose","Electric Lamp","out for delivery");
+    Order order3 = new Order("Sam","Santa Clara","Mobile Phone","delivered");
 
-        //for now hard code number items a user has in cart
-        if (customerUserName.equals(firstUserName)){
-          userOrderLimit = 2;
+    Order[] orders = { order1, order2, order3 };
 
+
+
+    public Order getOrderForUser(String username, String password){
+        Order returnOrder = new Order();
+
+        VerifyCustomerInfo verifyCustomerInfo = new VerifyCustomerInfo();
+        VerificationStatus verificationStatus =  verifyCustomerInfo.userExists(username,password);
+        if(verificationStatus.status == true){
+            for(int i = 0; i < orders.length ; i++ ){
+                if(username.equals(orders[i].getUserName())){
+                    returnOrder = orders[i];
+                }
+            }
         }
-        else  if (customerUserName.equals(secondUserName)){
-            userOrderLimit = 3;
+        else {
+            System.out.println(verificationStatus.message);
+            returnOrder = null;
         }
-        //provide customer name and  check order status
-        for (int i=0; i <= userOrderLimit; i++){
-            orderStatusLimit = (int)((Math.random())*4); //get a random value and pass it to array to return a different status and item each time program is run
-            orderItemLimit = (int)((Math.random())*6);
-            System.out.println(i + ". Your order status for " +orderedItem[orderItemLimit]+ " is " + orderStatus[orderStatusLimit]);
+        return returnOrder;
+    }
 
+    public void getOrder(){
+        String username, password;
+
+        System.out.println("Enter Your User Name");
+        Scanner scannerUserName = new Scanner(System.in);
+        username = scannerUserName.nextLine();
+
+        System.out.println("Enter Your Password");
+        Scanner scannerPassword = new Scanner(System.in);
+        password = scannerPassword.nextLine();
+
+        CustomerOrderDetails customerOrderDetails = new CustomerOrderDetails();
+        Order order = customerOrderDetails.getOrderForUser(username,password);
+        if(order!=null){
+            System.out.println("Welcome " + order.getUserName() + "!\nYou have ordered " +   order.getOrderItem()
+                    + "\nYour order Status is " + "\"" + order.getOrderStatus() +"\""
+                    + "\nDelivery location is " + order.getAddressOfUser());
         }
-
 
 
     }
 }
+
+
+

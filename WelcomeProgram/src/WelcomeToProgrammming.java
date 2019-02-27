@@ -1,5 +1,7 @@
 import CustomerOrders.CustomerOrderDetails;
 import CustomerProfile.CustomerInfo;
+import Order.Order;
+import VerifyCustomerInfo.VerificationStatus;
 import VerifyCustomerInfo.VerifyCustomerInfo;
 
 import java.util.Scanner;
@@ -9,28 +11,16 @@ public class WelcomeToProgrammming {
 
     public static void main (String[] args){
 
-        CustomerInfo customerInfo = new CustomerInfo();
 
-        //set and get user input user name and password
-        CustomerInfo customerDetails =  customerInfo.userInputDetails();
-        VerifyCustomerInfo verifyCustomerInfo = new VerifyCustomerInfo();
+    CustomerOrderDetails customerOrderDetails = new CustomerOrderDetails();
 
-        //verify is user name exists and matches with password in records
-        VerifyCustomerInfo verifyCustomerDataExists = verifyCustomerInfo.
-                verifyUserInfo(customerInfo.userInputName, customerInfo.userInputPassword);
-
-        // if user name and password matched, then get status of that user
-        if ((verifyCustomerDataExists.isUserExists) && (verifyCustomerDataExists.isMatchingUserNameAndPassword)){
-            CustomerOrderDetails customerOrderDetails = new CustomerOrderDetails();
-            customerOrderDetails.orderStatus(customerInfo.userInputName);
-
-        }
-
-
-
+        customerOrderDetails.getOrder();
 
 
     }
+
+
+
 
 
     static void calcOperatorFunction(){
