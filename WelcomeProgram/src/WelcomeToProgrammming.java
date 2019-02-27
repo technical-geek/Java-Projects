@@ -1,5 +1,7 @@
 import CustomerOrders.CustomerOrderDetails;
 import CustomerProfile.CustomerInfo;
+import Order.Order;
+import VerifyCustomerInfo.VerificationStatus;
 import VerifyCustomerInfo.VerifyCustomerInfo;
 
 import java.util.Scanner;
@@ -9,28 +11,62 @@ public class WelcomeToProgrammming {
 
     public static void main (String[] args){
 
-        CustomerInfo customerInfo = new CustomerInfo();
+        // CustomerInfo customerInfo = new CustomerInfo();
 
-        //set and get user input user name and password
-        CustomerInfo customerDetails =  customerInfo.userInputDetails();
-        VerifyCustomerInfo verifyCustomerInfo = new VerifyCustomerInfo();
+        // //set and get user input user name and password
+        // CustomerInfo customerDetails =  customerInfo.userInputDetails();
+        // VerifyCustomerInfo verifyCustomerInfo = new VerifyCustomerInfo();
 
-        //verify is user name exists and matches with password in records
-        VerifyCustomerInfo verifyCustomerDataExists = verifyCustomerInfo.
-                verifyUserInfo(customerInfo.userInputName, customerInfo.userInputPassword);
+        // //verify is user name exists and matches with password in records
+        // VerifyCustomerInfo verifyCustomerDataExists = verifyCustomerInfo.
+        //         verifyUserInfo(customerInfo.userInputName, customerInfo.userInputPassword);
 
-        // if user name and password matched, then get status of that user
-        if ((verifyCustomerDataExists.isUserExists) && (verifyCustomerDataExists.isMatchingUserNameAndPassword)){
-            CustomerOrderDetails customerOrderDetails = new CustomerOrderDetails();
-            customerOrderDetails.orderStatus(customerInfo.userInputName);
+        // // if user name and password matched, then get status of that user
+        // if ((verifyCustomerDataExists.isUserExists) && (verifyCustomerDataExists.isMatchingUserNameAndPassword)){
+        //     CustomerOrderDetails customerOrderDetails = new CustomerOrderDetails();
+        //     customerOrderDetails.orderStatus("customerInfo.userInputName");
 
+        // }
+
+
+        getOrder();
+
+        // enterCredentials();
+    }
+    static void getOrder(){
+        String username, password;
+        
+        System.out.println("Enter Your User Name");
+        Scanner scannerUserName = new Scanner(System.in);
+        username = scannerUserName.nextLine();
+
+        System.out.println("Enter Your Password");
+        Scanner scannerPassword = new Scanner(System.in);
+        password = scannerPassword.nextLine();
+
+        CustomerOrderDetails customerOrderDetails = new CustomerOrderDetails();
+        Order order = customerOrderDetails.getOrderForUser(username,password);
+        if(order!=null){
+            // System.out.println(order.);
         }
 
-
-
-
-
     }
+
+    // static void enterCredentials(){
+    //     String username, password;
+        
+    //     System.out.println("Enter Your User Name");
+    //     Scanner scannerUserName = new Scanner(System.in);
+    //     username = scannerUserName.nextLine();
+
+    //     System.out.println("Enter Your Password");
+    //     Scanner scannerPassword = new Scanner(System.in);
+    //     password = scannerPassword.nextLine();
+
+
+
+
+    // }
 
 
     static void calcOperatorFunction(){
