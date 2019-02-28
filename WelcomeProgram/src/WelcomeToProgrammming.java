@@ -1,5 +1,5 @@
 import CustomerOrders.CustomerOrderDetails;
-import CustomerProfile.CustomerInfo;
+//import CustomerProfile.CustomerInfo;
 import Order.Order;
 import VerifyCustomerInfo.VerificationStatus;
 import VerifyCustomerInfo.VerifyCustomerInfo;
