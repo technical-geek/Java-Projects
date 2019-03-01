@@ -10,6 +10,6 @@ public class StudentResult {
 
     //get student marks
     ExamInfo examInfo = new ExamInfo();
-    examInfo.examResult;
+    boolean test = examInfo.examResult;
 
 }
