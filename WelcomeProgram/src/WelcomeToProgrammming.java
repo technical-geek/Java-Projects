@@ -1,5 +1,6 @@
 import CustomerOrders.CustomerOrderDetails;
 //import CustomerProfile.CustomerInfo;
+import Examination.ExamInfo;
 import Order.Order;
 import VerifyCustomerInfo.VerificationStatus;
 import VerifyCustomerInfo.VerifyCustomerInfo;
@@ -16,6 +17,13 @@ public class WelcomeToProgrammming {
 
         customerOrderDetails.getOrder();
 
+
+        ExamInfo ex = new ExamInfo();
+
+        for(int i = 0; i < ex.courses.length; i++){
+            Scanner myObj = new Scanner(System.in);
+            ex.marks[i] = Integer.parseInt(myObj.nextLine());
+        }
 
     }
 
